@@ -30,6 +30,6 @@ Financial transaction data includes amounts assessed and associated credits or d
 ## Supporting services
 * [Service - Intermediation](../Service%20-%20Intermediation)
 * [Service - Software Intermediation](../Service%20-%20Software%20Intermediation)
-* [Service - Identity and Access](../Service%20-%20Identity%20and%20Access/Latest)
+* [Service - Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access)
 
 
