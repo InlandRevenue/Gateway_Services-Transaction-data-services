@@ -1,5 +1,5 @@
-![IRD logo](../Images/IRlogo.gif)
-![Software Dev](../Images/SoftwareDev.png)
+![IRD logo](Images/IRlogo.gif)
+![Software Dev](Images/SoftwareDev.png)
 
 # Transaction Data Services (TDS) 
 
@@ -25,11 +25,11 @@ Financial transaction data includes amounts assessed and associated credits or d
 
 ## WSDL and XSD schemas
 * [TDS WSDL and XSD schemas](WSDL%20and%20XSD/)
-* View and Download [Common Schema v1](../Schema%20-%20Common/Common.v1.xsd)
+* View and Download [Common Schema v1](20Common%20XSD/Common.v1.xsd)
 
 ## Supporting services
-* [Service - Intermediation](../Service%20-%20Intermediation)
-* [Service - Software Intermediation](../Service%20-%20Software%20Intermediation)
+* [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* [Service - Software Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Software%20Intermediation)
 * [Service - Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access)
 
 
