@@ -73,7 +73,7 @@ _______________________________________
 			<xsd:element name="filingFrequency" type="tds:FilingFrequencyType"/>
 			<xsd:element name="accountType" type="cmn:AccountTypeType"/>
 			<xsd:element name="balance" type="cmn:MoneyType"/>
-			<xsd:element name="forecastedBalance" type="cmn:MoneyType"/>
+			<xsd:element name="forecastedTotalBalance" type="cmn:MoneyType"/>
 			<xsd:element name="maxActivity" type="cmn:DateTimeType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
@@ -129,7 +129,7 @@ _______________________________________
 			<xsd:element name="credit" type="cmn:MoneyType"/>
 			<xsd:element name="creditForecasted" type="cmn:MoneyType"/>
 			<xsd:element name="balance" type="cmn:MoneyType"/>
-			<xsd:element name="forecastedBalance" type="cmn:MoneyType"/>
+			<xsd:element name="forecastedTotalBalance" type="cmn:MoneyType"/>
 			<xsd:element name="activity" type="cmn:DateTimeType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
