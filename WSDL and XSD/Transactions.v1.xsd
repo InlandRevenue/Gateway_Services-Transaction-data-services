@@ -56,7 +56,7 @@ _______________________________________
 			<xsd:element name="bankAccounts" type="BankAccountsType" minOccurs="0"/>
 			<xsd:element name="transfers" type="TransfersType" minOccurs="0"/>
 			<xsd:element name="bills" type="BillsType" minOccurs="0"/>
-			<xsd:element name="transaction" type="TransactionType" minOccurs="0"/>
+      <xsd:element name="transactions" type="TransactionsType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="infoHeaderType">
@@ -84,7 +84,7 @@ _______________________________________
 	</xsd:complexType>
 	<xsd:complexType name="TransactionsType">
 		<xsd:sequence>
-			<xsd:element name="transaction" type="TransactionType" maxOccurs="unbounded"/>
+			<xsd:element name="transaction" type="TransactionType" maxOccurs="unbounded"  minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="BillsType">
@@ -124,7 +124,7 @@ _______________________________________
 			<xsd:element name="credit" type="cmn:MoneyType"/>
 			<xsd:element name="creditForecasted" type="cmn:MoneyType"/>
 			<xsd:element name="balance" type="cmn:MoneyType"/>
-			<xsd:element name="forecastedBalance" type="cmn:MoneyType"/>
+			<xsd:element name="forecastedTotalBalance" type="cmn:MoneyType"/>
 			<xsd:element name="transactions" type="TransactionsType"/>
 		</xsd:sequence>
 	</xsd:complexType>
@@ -157,7 +157,7 @@ _______________________________________
 			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:token">
-			<xsd:maxLength value="2"/>
+			<xsd:maxLength value="20"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="BillIDType">
