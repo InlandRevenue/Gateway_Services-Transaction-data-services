@@ -20,7 +20,7 @@ Financial transaction data includes amounts assessed and associated credits or d
 	
 		* TDS Overview and Transition Data Conversion Scenarios
 		* TDS Overview and Transition Data Scenarios
-		* TDS Overview and Transition Release 3 Data Scenarios
+		* TDS Overview and Transition Release 4 Data Scenarios
 		
 * [TDS Bulk File Feed samples](TDS%20Bulk%20File%20Feed%20samples/)
 * [TDS Real-Time sample messages](TDS%20Real-Time%20sample%20messages/)
