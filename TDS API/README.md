@@ -1,11 +1,5 @@
-<span style="background-color: #37424A; height:3.42857rem">
-    <img src="./Images/logo-landscape.svg" style="width:143px; padding-left:20px; padding-top:10px"/>
-</span>
-
-<span style="background-color: #008B95; height:6.42857rem">
-    <img src="./Images/SoftwareProviders.svg"/>
-</span>
-
+![IRD logo](./Images/logo-landscape.svg)
+![Software Dev](./Images/SoftwareProviders.svg)
 
 # Transaction Data Services (TDS) API 
 
@@ -18,7 +12,7 @@ Financial transaction data includes amounts assessed and associated credits or d
 
 ## YAML
 
-* Release Candiate version [Build pack - TDS API](./Release%20Candidate/TDS-2023113.yaml)
+* Release Candiate version [TDS API YAML](./Release%20Candidate/TDS-2023113.yaml)
 
 ## TDS Data Scenarios and Sample Messages
 
