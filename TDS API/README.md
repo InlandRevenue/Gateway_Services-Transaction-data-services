@@ -1,5 +1,5 @@
-![IRD logo](./Images/logo-landscape.svg)
-![Software Dev](./Images/SoftwareProviders.svg)
+![IRD logo](Images/IRlogo.gif)
+![Software Dev](Images/SoftwareDev.png)
 
 # Transaction Data Services (TDS) API 
 
