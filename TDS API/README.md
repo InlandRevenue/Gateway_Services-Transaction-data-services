@@ -1,4 +1,3 @@
-
 <span style="background-color: #37424A; height:3.42857rem">
     <img src="./Images/logo-landscape.svg" style="width:143px; padding-left:20px; padding-top:10px"/>
 </span>
@@ -8,8 +7,6 @@
 </span>
 
 
-
-
 # Transaction Data Services (TDS) API 
 
 The TDS is a suite of business services that provides access to IR customers transaction data for consumption by software packages.  In turn these packages present that data to their users. 
@@ -17,14 +14,15 @@ Financial transaction data includes amounts assessed and associated credits or d
 
 ## TDS API Build Pack
 
-| PDF Build Pack | Document Overview|
-| --- | --- |
+* Release Candiate version [Build pack - TDS API](./Release%20Candidate/Build%20pack%20-%20TDS%20API.pdf)
 
+## YAML
+
+* Release Candiate version [Build pack - TDS API](./Release%20Candidate/TDS-2023113.yaml)
 
 ## TDS Data Scenarios and Sample Messages
 
-
-## YAML
+* Coming Soon
 
 ## Supporting services
 * [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)

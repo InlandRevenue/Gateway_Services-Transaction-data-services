@@ -2,8 +2,8 @@ swagger: '2.0'
 info: 
   title: TDS
   version: ""
-host: 'eservices-test-gateway.npnsp.ird.govt.nz'
-basePath: /secure/gateway/tds/
+host: 'test5.services.ird.govt.nz:4046'
+basePath: /gateway/tds/
 schemes: 
   - https
 paths: 
