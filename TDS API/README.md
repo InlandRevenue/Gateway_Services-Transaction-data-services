@@ -12,13 +12,14 @@ Financial transaction data includes amounts assessed and associated credits or d
 
 ## YAML
 
-* Release Candiate version [TDS API YAML](./Release%20Candidate/TDS-2023113.yaml)
+* Release Candiate version [TDS API YAML](./Release%20Candidate/TDS%20API-20230113.yaml)
 
 ## TDS Data Scenarios and Sample Messages
 
 * Coming Soon
 
 ## Supporting services
+* [Customer Services Suite](https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account/tree/master/Customer%20Services%20Suite)
 * [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 * [Service - Software Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Software%20Intermediation)
 * [Service - Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access)

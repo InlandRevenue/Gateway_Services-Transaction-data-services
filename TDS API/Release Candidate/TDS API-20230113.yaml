@@ -1,7 +1,7 @@
 swagger: '2.0'
 info: 
   title: TDS
-  version: ""
+  version: 'Version 0.5'
 host: 'test5.services.ird.govt.nz:4046'
 basePath: /gateway/tds/
 schemes: 
