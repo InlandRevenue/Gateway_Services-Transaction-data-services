@@ -1,0 +1,31 @@
+{
+  "customer": [
+    {
+      "customerId": "139476387",
+      "account": [
+        {
+          "accountId": "139476387INC002",
+          "accountType": "INC",
+          "accountForecastedBalance": -5800.00,
+          "period": [
+            {
+              "filingPeriod": "2019-03-31",
+              "tax": -10000.00,
+              "penalty": 0.00,
+              "penaltyForecasted": 0.00,
+              "interest": 0.00,
+              "interestForecasted": 0.00,
+              "other": 4200.00,
+              "otherForecasted": 0.00,
+              "credit": 0.00,
+              "creditForecasted": 0.00,
+              "balance": -5800.00,
+              "balanceForecasted": -5800.00,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

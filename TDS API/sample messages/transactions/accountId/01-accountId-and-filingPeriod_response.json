@@ -1,0 +1,62 @@
+{
+  "filingPeriod": "2021-03-31",
+  "periodBegin": "2020-04-01",
+  "periodEnd": "2021-03-31",
+  "tax": 4200.00,
+  "penalty": 0.00,
+  "penaltyForecasted": 0.00,
+  "interest": 0.00,
+  "interestForecasted": 0.00,
+  "other": 0.00,
+  "otherForecasted": 0.00,
+  "credit": -4200.00,
+  "creditForecasted": 0.00,
+  "balance": 0.00,
+  "balanceForecasted": 0.00,
+  "lastPeriodActivity": "2022-12-02",
+  "billItems": [
+    {
+      "id": "642506368",
+      "dueDate": "2022-02-08",
+      "tax": 4200.00,
+      "penalty": 0.00,
+      "penaltyForecasted": 0.00,
+      "interest": 0.00,
+      "interestForecasted": 0.00,
+      "other": 0.00,
+      "otherForecasted": 0.00,
+      "credit": -4200.00,
+      "creditForecasted": 0.00,
+      "balance": 0.00,
+      "balanceForecasted": 0.00,
+      "transactions": [
+        {
+          "transactionId": "1165002816",
+          "transType": "RTNORI",
+          "postedDate": "2021-04-29",
+          "effectiveDate": "2021-04-01",
+          "amount": 4200.00,
+          "linkedTransactionId": "0"
+        }
+      ]
+    }
+  ],
+  "creditTransfers": [
+    {
+      "transactionId": "1931920704",
+      "transferAccountId": "139476387",
+      "transferAccountAccountType": "INC",
+      "transferPeriod": "2019-03-31"
+    }
+  ],
+  "transactions": [
+    {
+      "transactionId": "1931920704",
+      "transType": "XFRIN",
+      "postedDate": "2022-12-02",
+      "effectiveDate": "2022-02-08",
+      "amount": -4200.00,
+      "linkedTransactionId": "0"
+    }
+  ]
+}
