@@ -54,7 +54,7 @@ The mind map for the emulated service [View larger image](images/TDSEmulatorMind
 * Access delegation/restriction is not emulated, and any authenticated user has access to the test data.
   * OAuth
 	* OAuth token issued by the mock OAuth service. Any valid token issued by the mock OAuth service can be used to access this service.
-	* Please consult the [mock OAuth service documentation](https://mock-oauth.ird.digitalpartner.services/) for further details about the authentication process.
+	* Please consult the [mock OAuth service documentation](https://oauth.test.services.ird.govt.nz/) for further details about the authentication process.
 	* The OAuth token should be provided in the 'Authorization' request header as follows:
 	```
 	Authorization: Bearer {OAuthAccessToken}
