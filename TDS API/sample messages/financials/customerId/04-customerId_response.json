@@ -1,0 +1,24 @@
+{
+  "customer": [
+    {
+      "customerId": "139476387",
+      "account": [
+        {
+          "accountId": "139476387FBT005",
+          "accountType": "FBT",
+          "accountForecastedBalance": 78684.95
+        },
+        {
+          "accountId": "139476387GST004",
+          "accountType": "GST",
+          "accountForecastedBalance": -41536.32
+        },
+        {
+          "accountId": "139476387INC002",
+          "accountType": "INC",
+          "accountForecastedBalance": -5800.00
+        }
+      ]
+    }
+  ]
+}

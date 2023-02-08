@@ -1,0 +1,64 @@
+{
+  "periodCount": 6,
+  "customer": [
+    {
+      "customerId": "139476387",
+      "account": [
+        {
+          "accountId": "139476387FBT005",
+          "accountForecastedBalance": 78684.95,
+          "period": [
+            {
+              "filingPeriod": "2021-12-31",
+              "periodForecastedBalance": 78684.95,
+              "transactionCount": 4,
+              "lastPeriodActivity": "2022-12-02"
+            },
+            {
+              "filingPeriod": "2022-03-31",
+              "periodForecastedBalance": 0.00,
+              "transactionCount": 9,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        },
+        {
+          "accountId": "139476387GST004",
+          "accountForecastedBalance": -41536.32,
+          "period": [
+            {
+              "filingPeriod": "2021-12-31",
+              "periodForecastedBalance": 0.00,
+              "transactionCount": 5,
+              "lastPeriodActivity": "2022-12-02"
+            },
+            {
+              "filingPeriod": "2022-03-31",
+              "periodForecastedBalance": -41536.32,
+              "transactionCount": 13,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        },
+        {
+          "accountId": "139476387INC002",
+          "accountForecastedBalance": -5800.00,
+          "period": [
+            {
+              "filingPeriod": "2019-03-31",
+              "periodForecastedBalance": -5800.00,
+              "transactionCount": 2,
+              "lastPeriodActivity": "2022-12-02"
+            },
+            {
+              "filingPeriod": "2021-03-31",
+              "periodForecastedBalance": 0.00,
+              "transactionCount": 2,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
