@@ -1,0 +1,34 @@
+{
+  "periodCount": 2,
+  "customer": [
+    {
+      "customerId": "139476387",
+      "account": [
+        {
+          "accountId": "139476387FBT005",
+          "accountForecastedBalance": 78684.95,
+          "period": [
+            {
+              "filingPeriod": "2022-03-31",
+              "periodForecastedBalance": 0.00,
+              "transactionCount": 9,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        },
+        {
+          "accountId": "139476387GST004",
+          "accountForecastedBalance": -41536.32,
+          "period": [
+            {
+              "filingPeriod": "2022-03-31",
+              "periodForecastedBalance": -41536.32,
+              "transactionCount": 13,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "code": "TDS102",
+      "type": "validation",
+      "message": "Input parameter does not meet requirement."
+    }
+  ]
+}

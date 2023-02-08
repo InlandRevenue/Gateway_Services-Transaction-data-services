@@ -1,0 +1,22 @@
+{
+  "periodCount": 1,
+  "customer": [
+    {
+      "customerId": "139476387",
+      "account": [
+        {
+          "accountId": "139476387INC002",
+          "accountForecastedBalance": -5800.00,
+          "period": [
+            {
+              "filingPeriod": "2019-03-31",
+              "periodForecastedBalance": -5800.00,
+              "transactionCount": 2,
+              "lastPeriodActivity": "2022-12-02"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
