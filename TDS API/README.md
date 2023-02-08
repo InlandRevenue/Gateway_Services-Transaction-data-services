@@ -21,6 +21,14 @@ Financial transaction data includes amounts assessed and associated credits or d
 This is an emulated service which emulates the TDS Gateway Service APIs.
 It provides static responses for a subset of scenarios invoked on each API. Please note that not all requests and responses are emulated.
 
+## TDS API Build Pack
+
+* Release Candiate version [Build pack - TDS API](.//Build%20pack%20-%20TDS%20API.pdf)
+
+## YAML
+
+* [TDS API YAML](./TDS%20API-20230208.yaml)
+
 ## Reconciliation Model APIs 
  - Summary Status
  - Summary
@@ -144,33 +152,27 @@ The mind map for the emulated service [View larger image](images/TDSEmulatorMind
 
 
 
-## TDS API Build Pack
 
-* Release Candiate version [Build pack - TDS API](./Release%20Candidate/Build%20pack%20-%20TDS%20API.pdf)
 
 <a href="Digital-Testing-Environment-information"></a>
 ## Digital Testing Environment information
 
 The hosted service is available at: 
-  * Sanitized Slice Data Slice Data: https://test5.services.ird.govt.nz:4046/gateway/tds/
-  * Produdution Data: https://test6.services.ird.govt.nz:4046/gateway/tds/
+   * Slice Data Slice Data: https://test5.services.ird.govt.nz:4046/gateway/tds/
+  
   
 ### Test scenarios report template
 
 * Test Scenarios Report Template coming soon.
 
 <a href="Production-Environment-information"></a>
-## Production Environment information
+## Production Environment information:
 
-The hosted service is available at: https://services.ird.govt.nz:4046/gateway/tds/
+TDS API URL Endpoint: https://services.ird.govt.nz:4046/gateway/tds/
 
->NOTE: The TDS API requires a separate dedicated mutual TLS certificate. 
->This certificate can not be used in conjunction other existing SOAP & RESTful APIs.
->This will provide controls required for IR to manage this service and avoid any unintentional impact to other services
+>***PLEASE NOTE:*** IR requires DSP’s to provide a separate mutual TLS certificate which will be used exclusively for the TDS API.  
 
-## YAML
 
-* Release Candiate version [TDS API YAML](./Release%20Candidate/TDS%20API-20230208.yaml)
 
 
 ## Supporting services
