@@ -23,7 +23,7 @@ It provides static responses for a subset of scenarios invoked on each API. Plea
 
 ## TDS API Build Pack
 
-* Release Candiate version [Build pack - TDS API](.//Build%20pack%20-%20TDS%20API.pdf)
+* Verion 0.5 [Build pack - TDS API](.//Build%20pack%20-%20TDS%20API.pdf)
 
 ## YAML
 
