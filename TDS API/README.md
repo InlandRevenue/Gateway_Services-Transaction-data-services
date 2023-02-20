@@ -27,7 +27,7 @@ It provides static responses for a subset of scenarios invoked on each API. Plea
 
 ## YAML
 
-* [TDS API YAML](./TDS%20API-20230208.yaml)
+* [TDS API YAML](./TDS%20API-20230213.yaml)
 
 ## Reconciliation Model APIs 
  - Summary Status
