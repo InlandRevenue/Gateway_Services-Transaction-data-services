@@ -1,55 +1,179 @@
-![IRD logo](Images/IRlogo.gif)
-![Software Dev](Images/SoftwareDev.png)
+![IRD logo](./Images/IRlogo.gif)
+![Software Dev](./Images/SoftwareDev.png)
 
-# Transaction Data Services (TDS) 
+# TDS Emulated Service #
+
+#### Release version 1.0
+
+# Transaction Data Services (TDS) API 
 
 The TDS is a suite of business services that provides access to IR customers transaction data for consumption by software packages.  In turn these packages present that data to their users. 
-Financial transaction data includes amounts assessed and associated credits or debits.  There is no data sent associated with the details of how an assessment has been calculated..
+Financial transaction data includes amounts assessed and associated credits or debits.  There is no data sent associated with the details of how an assessment has been calculated
 
-## *NEW* TDS API
+## Environment information
 
-* [TDS API](./TDS%20API/)
+* [Mock environment information - emulated service, scenarios mindmap and test data](#mock-environment-information)
+* [Test URL endpoints](#Digital-Testing-Environment-information)
+* [Production URL endpoints](#Production-Environment-information)
 
-## What's Changed
+## About the Transaction Data Service API
 
-### XSD Schema Changes
+This is an emulated service which emulates the TDS Gateway Service APIs.
+It provides static responses for a subset of scenarios invoked on each API. Please note that not all requests and responses are emulated.
 
-* Account.v1.xsd
-	* Update field forecastedBalance to forecastedTotalBalance
+## TDS API Build Pack
 
-* Transactions.v1.xsd
-	* Update field transaction to transactions
-	* Update field forecastedBalance to forecastedTotalBalance
-	* update simpleType TransactionLinkIDType field maxLength to 20 character
+* [Build pack - TDS API](./Build%20pack%20-%20TDS%20API.pdf)
 
-### Added R4 Scenarios for Student loans
-* Updated examples of Transactions Types with Period Impacts which covers Student Loans account type	
+## YAML
 
-## TDS Build Packs
+* [TDS API YAML](./TDS%20API-20230324.yaml)
 
-| PDF Build Pack | Document Overview|
-| --- | --- |
-| [TDS Overview and Transition ](TDS%20Overview%20and%20Transition%20-%20Build%20Pack.pdf) | This document is provided to Software Providers to support their use of Transaction Data Services (TDS). It<br/>•  provides an high level business overview of TDS to enable an understanding of the service being offered<br/>•  describes the data being made available through the services<br/>•  describes the permission model |
-| [TDS Bulk File Feed](TDS%20Real%20Time%20-%20Build%20Pack.pdf) |This document is provided to software providers to support the build and use of the Transaction Data Service (TDS) Real Time web services. <br/>  It also describes the relationship with other build packs, the architecture of the technical solution, schemas (file formats), end points, and sample payloads.  | 
-| [TDS Real Time ](Gateway%20Services%20Build%20Pack%20-%20TDS%20Real%20Time.pdf)| This document is provided to Software Providers to support the build and use of the Transaction Data Service (TDS) Real Time web services. It also describes the relationship with other build packs, architecture of the technical solution, schemas (file formats), and endpoints; it also provides sample payloads.|
+## Reconciliation Model APIs 
+ - Summary Status
+ - Summary
+ - Transactions/Batch
 
-## TDS Data Scenarios and Sample Messages
-* [Data Scenarios](Data%20Scenarios/)
-	#### The Data Scenarios includes:
-	
-		* TDS Overview and Transition Data Conversion Scenarios
-		* TDS Overview and Transition Data Scenarios
-		* TDS Overview and Transition Release 3 Data Scenarios 
-		* TDS Overview and Transition Release 4 Data Scenarios
-		
-* [TDS Bulk File Feed samples](TDS%20Bulk%20File%20Feed%20samples/)
-* [TDS Real-Time sample messages](TDS%20Real-Time%20sample%20messages/)
+## Realtime 
+- Financials
+- Transactions/Realtime
 
-## WSDL and XSD schemas
-* [TDS WSDL and XSD schemas](WSDL%20and%20XSD/)
-* View and Download [Common Schema v1](../WSDL%20and%20XSD/Common.v1.xsd)
+<a href="mock-environment-information"></a>
+## Mock environment information
+
+The hosted service is available at: https://tds-api.test.services.ird.govt.nz.
+
+## Mind Map
+
+The mind map for the emulated service [View larger image](./Images/TDSEmulatorMindMap.png)
+![Mock Scenarios](images/TDSEmulatorMindMap.png)
+
+
+### Mock environment authentication
+* Consumers of this mock service must be authenticated for the Realtime Model.
+* Access delegation/restriction is not emulated, and any authenticated user has access to the test data.
+  * OAuth
+	* OAuth token issued by the mock OAuth service. Any valid token issued by the mock OAuth service can be used to access this service.
+	* Please consult the [mock OAuth service documentation](https://oauth.test.services.ird.govt.nz/) for further details about the authentication process.
+	* The OAuth token should be provided in the 'Authorization' request header as follows:
+	```
+	Authorization: Bearer {OAuthAccessToken}
+	```
+ 
+
+## Test Data
+
+### Summary - Retrieve account summary
+
+| clientListId | linked account |      filing periods       |
+|--------------|:--------------:|:-------------------------:|
+| 139702328    |      INC       |  2019-03-31, 2021-03-31   |
+
+| customerId    | linked account |       filing periods       |
+|---------------|:--------------:|:--------------------------:|
+| 139476387     |      FBT       |   2021-12-31, 2022-03-31   |
+|               |      GST       |   2021-12-31, 2022-03-31   |
+|               |      INC       |   2019-03-31, 2021-03-31   |
+
+| accountId       |       filing periods       |
+|-----------------|:--------------------------:|
+| 139476387FBT005 |   2021-12-31, 2022-03-31   |
+| 139476387GST004 |   2021-12-31, 2022-03-31   |
+| 139476387INC002 |   2019-03-31, 2021-03-31   |
+
+### TransactionsBatch / TransactionsRealtime - Retrieve transactions
+
+| accountId       | linked account |           filing periods            |
+|-----------------|:--------------:|:-----------------------------------:|
+| 139476387INC002 |      INC       |       2019-03-31, 2021-03-31        |
+
+### Financials - Retrieve financials
+
+| customerId | account |     filing periods     |
+|------------|:-------:|:----------------------:|
+| 139476387  |   FBT   | 2021-12-31, 2022-03-31 |
+|            |   GST   | 2021-12-31, 2022-03-31 |
+|            |   INC   | 2019-03-31, 2021-03-31 |
+
+## Example JSON requests and responses 
+
+### Summary
+- [01-accountId_request](./sample%20messages/summary/accountId/01-accountId_request.json)
+- [01-accountId_response](./sample%20messages/summary/accountId/01-accountId_response.json)
+- [02-accountId-and-filingPeriodFrom_request](./sample%20messages/summary/accountId/02-accountId-and-filingPeriodFrom_request.json)
+- [02-accountId-and-filingPeriodFrom_response](./sample%20messages/summary/accountId/02-accountId-and-filingPeriodFrom_response.json)
+- [03-accountId-and-filingPeriodTo_request](./sample%20messages/summary/accountId/03-accountId-and-filingPeriodTo_request.json)
+- [03-accountId-and-filingPeriodTo_response](./sample%20messages/summary/accountId/03-accountId-and-filingPeriodTo_response.json)
+- [04-clientListId_request](./sample%20messages/summary/clientListId/04-clientListId_request.json)
+- [04-clientListId_response](./sample%20messages/summary/clientListId/04-clientListId_response.json)
+- [05-clientListId-accountType_request](./sample%20messages/summary/clientListId/05-clientListId-accountType_request.json)
+- [05-clientListId-accountType_response](./sample%20messages/summary/clientListId/05-clientListId-accountType_response.json)
+- [06-clientListId-and-filingPeriodFrom_request](./sample%20messages/summary/clientListId/06-clientListId-and-filingPeriodFrom_request.json)
+- [06-clientListId-and-filingPeriodFrom_response](./sample%20messages/summary/clientListId/06-clientListId-and-filingPeriodFrom_response.json)
+- [07-clientListId-and-filingPeriodTo_request](./sample%20messages/summary/clientListId/07-clientListId-and-filingPeriodTo_request.json)
+- [07-clientListId-and-filingPeriodTo_response](./sample%20messages/summary/clientListId/07-clientListId-and-filingPeriodTo_response.json)
+- [08-customerId_request](./sample%20messages/summary/customerId/08-customerId_request.json)
+- [08-customerId_response](./sample%20messages/summary/customerId/08-customerId_response.json)
+- [09-customerId-and-accountType_request](./sample%20messages/summary/customerId/09-customerId-and-accountType_request.json)
+- [09-customerId-and-accountType_response](./sample%20messages/summary/customerId/09-customerId-and-accountType_response.json)
+- [10-customerId-and-filingPeriodFrom_request](./sample%20messages/summary/customerId/10-customerId-and-filingPeriodFrom_request.json)
+- [10-customerId-and-filingPeriodFrom_response](./sample%20messages/summary/customerId/10-customerId-and-filingPeriodFrom_response.json)
+- [11-customerId-and-filingPeriodTo_request](./sample%20messages/summary/customerId/11-customerId-and-filingPeriodTo_request.json)
+- [11-customerId-and-filingPeriodTo_response](./sample%20messages/summary/customerId/11-customerId-and-filingPeriodTo_response.json)
+
+- [12-TDS102-accountId-and-accountType_request](./sample%20messages/summary/errors/12-TDS102-accountId-and-accountType_request.json)
+- [12-TDS102-accountId-and-accountType_response](./sample%20messages/summary/errors/12-TDS102-accountId-and-accountType_response.json)
+- [13-TDS102-missing-required-field_request](./sample%20messages/summary/errors/13-TDS102-missing-required-field_request.json)
+- [13-TDS102-missing-required-field_response](./sample%20messages/summary/errors/13-TDS102-missing-required-field_response.json)
+- [14-TDS102-accountId-customerId-clientListId_request](./sample%20messages/summary/errors/14-TDS102-accountId-customerId-clientListId_request.json)
+- [14-TDS102-accountId-customerId-clientListId_response](./sample%20messages/summary/errors/14.json)
+- [15-TDS301-invalid-accountId_request](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_request.json)
+- [15-TDS301-invalid-accountId_response](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_response.json)
+
+### Transactions
+- [01-accountId-and-filingPeriod_request](./sample%20messages/transactions/accountId/01-accountId-and-filingPeriod_request.json)
+- [01-accountId-and-filingPeriod_response](./sample%20messages/transactions/accountId/01-accountId-and-filingPeriod_response.json)
+
+- [02-TDS302-accountId-and-invalid-filingPeriod_request](./sample%20messages/transactions/errors/02-TDS302-accountId-and-invalid-filingPeriod_request.json)
+- [02-TDS302-accountId-and-invalid-filingPeriod_response](./sample%20messages/transactions/errors/02-TDS302-accountId-and-invalid-filingPeriod_response.json)
+
+### Financials
+- [01-accountId_request](./sample%20messages/financials/accountId/01-accountId_request.json)
+- [01-accountId_response](./sample%20messages/financials/accountId/01-accountId_response.json)
+- [02-accountId-filingPeriodTo_request](./sample%20messages/financials/accountId/02-accountId-filingPeriodTo_request.json)
+- [02-accountId-filingPeriodTo_response](./sample%20messages/financials/accountId/02-accountId-filingPeriodTo_response.json)
+- [03-accountId-filingPeriodFrom_request](./sample%20messages/financials/accountId/03-accountId-filingPeriodFrom_request.json)
+- [03-accountId-filingPeriodFrom_response](./sample%20messages/financials/accountId/03-accountId-filingPeriodFrom_response.json)
+- [04-customerId_request.json](./sample%20messages/financials/customerId/04-customerId_request.json)
+- [04-customerId_response](./sample%20messages/financials/customerId/04-customerId_response.json)  
+
+- [05-TDS102-customerId-and-filingPeriod_request](./sample%20messages/financials/errors/05-TDS102-customerId-and-filingPeriod_request.json)
+- [05-TDS102-customerId-and-filingPeriod_response](./sample%20messages/financials/errors/05-TDS102-customerId-and-filingPeriod_response.json)
+
+
+
+
+
+<a href="Digital-Testing-Environment-information"></a>
+## Digital Testing Environment information
+
+   * Slice Data URL Endpoint: https://test5.services.ird.govt.nz:4046/gateway/tds/
+  
+  
+### Test scenarios report template
+
+* Test Scenarios Report Template coming soon.
+
+<a href="Production-Environment-information"></a>
+## Production Environment information:
+
+   * URL Endpoint: https://services.ird.govt.nz:4046/gateway/tds/
+
+>***PLEASE NOTE:*** IR requires DSP’s to provide a separate mutual TLS certificate which will be used exclusively for the TDS API /Summary and /transaction/batch.  
+
 
 ## Supporting services
+* [Customer Services Suite](https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account/tree/master/Customer%20Services%20Suite)
 * [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 * [Service - Software Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Software%20Intermediation)
 * [Service - Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access)

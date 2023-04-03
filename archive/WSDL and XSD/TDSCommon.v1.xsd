@@ -6,6 +6,10 @@ VER:	1.01
 ISSUER:	Inland Revenue Department
 DATE:	12/03/2018
 DESC:	This schema defines the Transaction Data Services Common data types used accross the Transactions and Account Gateway Services.
+
+'Date 			Change
+'********		************
+'2022-07-14	 	Updated TransactionIDType to accept 19 digits instead of 16
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/TDSCommon" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v1" xmlns:trn="urn:www.ird.govt.nz/GWS:types/TDSCommon" targetNamespace="urn:www.ird.govt.nz/GWS:types/TDSCommon" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -62,7 +66,7 @@ _______________________________________
 	</xsd:simpleType>
 	<xsd:simpleType name="TransactionIDType">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="[0-9]{1,16}"/>
+			<xsd:pattern value="[0-9]{1,19}"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="FilingFrequencyType">
