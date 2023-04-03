@@ -1,10 +1,6 @@
 ![IRD logo](./Images/IRlogo.gif)
 ![Software Dev](./Images/SoftwareDev.png)
 
-# TDS Emulated Service #
-
-#### Release version 1.0
-
 # Transaction Data Services (TDS) API 
 
 The TDS is a suite of business services that provides access to IR customers transaction data for consumption by software packages.  In turn these packages present that data to their users. 
