@@ -12,10 +12,11 @@ Financial transaction data includes amounts assessed and associated credits or d
 * [Test URL endpoints](#Digital-Testing-Environment-information)
 * [Production URL endpoints](#Production-Environment-information)
 
-## About the Transaction Data Service API
+## About the Emulated Transaction Data Service API
 
 This is an emulated service which emulates the TDS Gateway Service APIs.
-It provides static responses for a subset of scenarios invoked on each API. Please note that not all requests and responses are emulated.
+It provides static responses for a subset of scenarios invoked on each API. 
+>**Please note** that not all requests and responses are emulated.
 
 ## TDS API Build Pack
 
@@ -23,21 +24,22 @@ It provides static responses for a subset of scenarios invoked on each API. Plea
 
 ## YAML
 
-* [TDS API YAML](./TDS%20API-20230324.yaml)
+* [TDS API YAML](./TDS%20API-20230324.yaml)  
+* [View YAML is a Swagger Editor](https://inlandrevenue.github.io/?urls.primaryName=TDS%20API)
 
-## Reconciliation Model APIs 
+### Reconciliation (Batch) Model 
  - Summary Status
  - Summary
  - Transactions/Batch
 
-## Realtime 
+### Realtime Model
 - Financials
 - Transactions/Realtime
 
 <a href="mock-environment-information"></a>
-## Mock environment information
+# Mock environment information
 
-The hosted service is available at: https://tds-api.test.services.ird.govt.nz.
+The hosted service is available at: https://tds-api.test.services.ird.govt.nz (IP Address whitlisting is required)
 
 ## Mind Map
 
@@ -91,9 +93,9 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 |            |   GST   | 2021-12-31, 2022-03-31 |
 |            |   INC   | 2019-03-31, 2021-03-31 |
 
-## Example JSON requests and responses 
+### Example JSON requests and responses 
 
-### Summary
+#### /Summary
 - [01-accountId_request](./sample%20messages/summary/accountId/01-accountId_request.json)
 - [01-accountId_response](./sample%20messages/summary/accountId/01-accountId_response.json)
 - [02-accountId-and-filingPeriodFrom_request](./sample%20messages/summary/accountId/02-accountId-and-filingPeriodFrom_request.json)
@@ -126,14 +128,14 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [15-TDS301-invalid-accountId_request](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_request.json)
 - [15-TDS301-invalid-accountId_response](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_response.json)
 
-### Transactions
+#### /Transactions
 - [01-accountId-and-filingPeriod_request](./sample%20messages/transactions/accountId/01-accountId-and-filingPeriod_request.json)
 - [01-accountId-and-filingPeriod_response](./sample%20messages/transactions/accountId/01-accountId-and-filingPeriod_response.json)
 
 - [02-TDS302-accountId-and-invalid-filingPeriod_request](./sample%20messages/transactions/errors/02-TDS302-accountId-and-invalid-filingPeriod_request.json)
 - [02-TDS302-accountId-and-invalid-filingPeriod_response](./sample%20messages/transactions/errors/02-TDS302-accountId-and-invalid-filingPeriod_response.json)
 
-### Financials
+#### /Financials
 - [01-accountId_request](./sample%20messages/financials/accountId/01-accountId_request.json)
 - [01-accountId_response](./sample%20messages/financials/accountId/01-accountId_response.json)
 - [02-accountId-filingPeriodTo_request](./sample%20messages/financials/accountId/02-accountId-filingPeriodTo_request.json)
@@ -146,22 +148,23 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [05-TDS102-customerId-and-filingPeriod_request](./sample%20messages/financials/errors/05-TDS102-customerId-and-filingPeriod_request.json)
 - [05-TDS102-customerId-and-filingPeriod_response](./sample%20messages/financials/errors/05-TDS102-customerId-and-filingPeriod_response.json)
 
+## Mock Test Report Templates
 
-
-
+ * [TDS Transactional Data Services Realtime](TDS%20Replacement%20Services%20RealTime-%20Emulators.docx)
+ * [TDS Transactional Data Services Reconcilliation (Batch)](TDS%20Replacement%20Services%20RealTime-%20Emulators.docx)
 
 <a href="Digital-Testing-Environment-information"></a>
-## Digital Testing Environment information
+# Digital Testing Environment information
 
    * Slice Data URL Endpoint: https://test5.services.ird.govt.nz:4046/gateway/tds/
   
-  
-### Test scenarios report template
+## Test Report Templates
 
-* Test Scenarios Report Template coming soon.
-
+ * [TDS Replacement Service Realtime - Test Report Template](TDS%20Replacement%20Service%20Realtime%20-%20Test%20Report%20Template.docx)
+ * [TDS Replacement Service Reconciliation (Batch) - Test Report Template](TDS%20Replacement%20Service%20Reconciliation%20-%20Test%20Report%20Template.docx)
+ 
 <a href="Production-Environment-information"></a>
-## Production Environment information:
+# Production Environment information:
 
    * URL Endpoint: https://services.ird.govt.nz:4046/gateway/tds/
 
