@@ -150,8 +150,8 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 
 ## Mock Test Report Templates
 
- * [TDS Transactional Data Services Realtime](TDS%20Replacement%20Services%20RealTime%20-%20Emulators.docx)
- * [TDS Transactional Data Services Reconcilliation (Batch)](TDS%20Replacement%20Services%20Reconcilliation%20-%20Emulators.docx)
+ * [TDS Transactional Data Services Realtime](TDS%20Replacement%20Services%20Realtime%20-%20Emulators.docx)
+ * [TDS Transactional Data Services Reconciliation (Batch)](TDS%20Replacement%20Services%20Reconciliation%20-%20Emulators.docx)
 
 <a href="Digital-Testing-Environment-information"></a>
 # Digital Testing Environment information
