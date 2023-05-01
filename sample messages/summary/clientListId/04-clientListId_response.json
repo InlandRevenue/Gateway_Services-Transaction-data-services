@@ -11,14 +11,12 @@
             {
               "filingPeriod": "2019-03-31",
               "periodForecastedBalance": -5800.00,
-              "transactionCount": 2,
-              "lastPeriodActivity": "2022-12-02"
+              "transactionCount": 2
             },
             {
               "filingPeriod": "2021-03-31",
               "periodForecastedBalance": 0.00,
-              "transactionCount": 2,
-              "lastPeriodActivity": "2022-12-02"
+              "transactionCount": 2
             }
           ]
         }
