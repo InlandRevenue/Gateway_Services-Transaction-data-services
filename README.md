@@ -21,7 +21,7 @@ It provides static responses for a subset of scenarios invoked on each API.
 ## TDS API Build Pack & TDS Transition Overview V1
 
 * [Build pack - TDS API](./Build%20pack%20-%20TDS%20API.pdf)
-* [TDS Transition Overview V1](./TDS%20Transition%20Overview%20V2.pdf)
+* [TDS Transition Overview V1](./TDS%20Transition%20Overview%20V3.pdf)
 
 ## YAML
 
