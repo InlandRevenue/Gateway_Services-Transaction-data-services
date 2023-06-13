@@ -1,7 +1,7 @@
 swagger: '2.0'
 info: 
   title: TDS
-  version: "20230501"
+  version: "20230601"
 host: "services.ird.govt.nz:4046"
 basePath: /gateway/tds/
 schemes: 
@@ -557,8 +557,6 @@ definitions:
                       description: Data object representing a filing period
                       required: 
                         - filingPeriod
-                        - periodForecastedBalance
-                        - transactionCount
                       properties: 
                         filingPeriod: 
                           type: string
@@ -571,6 +569,9 @@ definitions:
                           type: number
                           format: int32
                           description: Number of transactions contained within a filing period
+                        pendingPayment: 
+                          type: boolean
+                          description: This filing period contains a pending payment
   summary_POST_Response400: 
     type: object
     required: 
