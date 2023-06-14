@@ -101,13 +101,16 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 
 ### Example JSON requests and responses 
 
-#### /Summary
+#### /Summary 
 - [01-accountId_request](./sample%20messages/summary/accountId/01-accountId_request.json)
 - [01-accountId_response](./sample%20messages/summary/accountId/01-accountId_response.json)
 - [02-accountId-and-filingPeriodFrom_request](./sample%20messages/summary/accountId/02-accountId-and-filingPeriodFrom_request.json)
 - [02-accountId-and-filingPeriodFrom_response](./sample%20messages/summary/accountId/02-accountId-and-filingPeriodFrom_response.json)
 - [03-accountId-and-filingPeriodTo_request](./sample%20messages/summary/accountId/03-accountId-and-filingPeriodTo_request.json)
 - [03-accountId-and-filingPeriodTo_response](./sample%20messages/summary/accountId/03-accountId-and-filingPeriodTo_response.json)
+- [16-accountId-with-pendingPayment_request](./sample%20messages/summary/accountId/16-accountId-with-pendingPayment_request.json)
+- [16-accountId-with-pendingPayment_response](./sample%20messages/summary/accountId/16-accountId-with-pendingPayment_response.json)
+
 - [04-clientListId_request](./sample%20messages/summary/clientListId/04-clientListId_request.json)
 - [04-clientListId_response](./sample%20messages/summary/clientListId/04-clientListId_response.json)
 - [05-clientListId-accountType_request](./sample%20messages/summary/clientListId/05-clientListId-accountType_request.json)
@@ -116,6 +119,9 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [06-clientListId-and-filingPeriodFrom_response](./sample%20messages/summary/clientListId/06-clientListId-and-filingPeriodFrom_response.json)
 - [07-clientListId-and-filingPeriodTo_request](./sample%20messages/summary/clientListId/07-clientListId-and-filingPeriodTo_request.json)
 - [07-clientListId-and-filingPeriodTo_response](./sample%20messages/summary/clientListId/07-clientListId-and-filingPeriodTo_response.json)
+- [17-clientListId-with-pendingPayment_request](./sample%20messages/summary/clientListId/17-clientListId-with-pendingPayment_request.json)
+- [17-clientListId-with-pendingPayment_response](./sample%20messages/summary/clientListId/17-clientListId-with-pendingPayment_response.json)
+
 - [08-customerId_request](./sample%20messages/summary/customerId/08-customerId_request.json)
 - [08-customerId_response](./sample%20messages/summary/customerId/08-customerId_response.json)
 - [09-customerId-and-accountType_request](./sample%20messages/summary/customerId/09-customerId-and-accountType_request.json)
@@ -124,6 +130,8 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [10-customerId-and-filingPeriodFrom_response](./sample%20messages/summary/customerId/10-customerId-and-filingPeriodFrom_response.json)
 - [11-customerId-and-filingPeriodTo_request](./sample%20messages/summary/customerId/11-customerId-and-filingPeriodTo_request.json)
 - [11-customerId-and-filingPeriodTo_response](./sample%20messages/summary/customerId/11-customerId-and-filingPeriodTo_response.json)
+- [18-customerId-with-pendingPayment_request](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_request.json)
+- [18-customerId-with-pendingPayment_response](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_response.json)
 
 - [12-TDS102-accountId-and-accountType_request](./sample%20messages/summary/errors/12-TDS102-accountId-and-accountType_request.json)
 - [12-TDS102-accountId-and-accountType_response](./sample%20messages/summary/errors/12-TDS102-accountId-and-accountType_response.json)
@@ -134,11 +142,7 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [15-TDS301-invalid-accountId_request](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_request.json)
 - [15-TDS301-invalid-accountId_response](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_response.json)
 
-- [16-accountId-with-pendingPayment_request](./sample%20messages/summary/customerId/16-accountId-with-pendingPayment_request)
-- [16-accountId-with-pendingPayment_response](./sample%20messages/summary/customerId/16-accountId-with-pendingPayment_response.json)
-- [17-clientListId-with-pendingPayment_request](./sample%20messages/summary/customerId/17-clientListId-with-pendingPayment_request.json)
-- [18-customerId-with-pendingPayment_request](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_request.json)
-- [18-customerId-with-pendingPayment_response](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_response.json)
+
 
 
 #### /Transactions
