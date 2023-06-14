@@ -67,18 +67,23 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 | clientListId | linked account |      filing periods       |
 |--------------|:--------------:|:-------------------------:|
 | 139702328    |      INC       |  2019-03-31, 2021-03-31   |
+| 139723834    |      INC       |  2021-03-31   |
 
 | customerId    | linked account |       filing periods       |
 |---------------|:--------------:|:--------------------------:|
 | 139476387     |      FBT       |   2021-12-31, 2022-03-31   |
 |               |      GST       |   2021-12-31, 2022-03-31   |
 |               |      INC       |   2019-03-31, 2021-03-31   |
+| 139723848     |      INC       |   2021-03-31               |
+| 139724348     |      INC       |   2020-03-31, 2021-03-31   |
 
 | accountId       |       filing periods       |
 |-----------------|:--------------------------:|
 | 139476387FBT005 |   2021-12-31, 2022-03-31   |
 | 139476387GST004 |   2021-12-31, 2022-03-31   |
 | 139476387INC002 |   2019-03-31, 2021-03-31   |
+| 139723848INC002 |   2021-03-31               |
+| 139724348INC002 |   2020-03-31, 2021-03-31   |
 
 ### TransactionsBatch / TransactionsRealtime - Retrieve transactions
 
@@ -128,6 +133,13 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 - [14-TDS102-accountId-customerId-clientListId_response](./sample%20messages/summary/errors/14.json)
 - [15-TDS301-invalid-accountId_request](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_request.json)
 - [15-TDS301-invalid-accountId_response](./sample%20messages/summary/errors/15-TDS301-invalid-accountId_response.json)
+
+- [16-accountId-with-pendingPayment_request](./sample%20messages/summary/customerId/16-accountId-with-pendingPayment_request)
+- [16-accountId-with-pendingPayment_response](./sample%20messages/summary/customerId/16-accountId-with-pendingPayment_response.json)
+- [17-clientListId-with-pendingPayment_request](./sample%20messages/summary/customerId/17-clientListId-with-pendingPayment_request.json)
+- [18-customerId-with-pendingPayment_request](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_request.json)
+- [18-customerId-with-pendingPayment_response](./sample%20messages/summary/customerId/18-customerId-with-pendingPayment_response.json)
+
 
 #### /Transactions
 - [01-accountId-and-filingPeriod_request](./sample%20messages/transactions/accountId/01-accountId-and-filingPeriod_request.json)

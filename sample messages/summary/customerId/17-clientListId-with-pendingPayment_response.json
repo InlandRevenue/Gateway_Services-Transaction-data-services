@@ -1,0 +1,20 @@
+{
+  "periodCount": 1,
+  "customer": [
+    {
+      "customerId": "139723848",
+      "account": [
+        {
+          "accountId": "139723848INC002",
+          "accountForecastedBalance": 0.00,
+          "period": [
+            {
+              "filingPeriod": "2021-03-31",
+              "pendingPayment": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
