@@ -179,7 +179,6 @@ paths:
 definitions: 
   financials_POST_Request: 
     type: object
-    required: []
     properties: 
       customerId: 
         type: string
@@ -211,7 +210,6 @@ definitions:
         description: 'An optional filter to include only outstanding periods with non-zero balance. Only accountId can be used in conjuction with this filter.'
   summary_POST_Request: 
     type: object
-    required: []
     properties: 
       clientListId: 
         type: string
@@ -1717,7 +1715,6 @@ definitions:
             bankAccountDetail: 
               type: object
               description: Data object representing bank account detail. This object varies for different bank account standards. See build pack for more details.
-              required: []
               properties: 
                 bank: 
                   type: string
@@ -3366,7 +3363,6 @@ definitions:
             bankAccountDetail: 
               type: object
               description: Data object representing bank account detail. This object varies for different bank account standards. See build pack for more details.
-              required: []
               properties: 
                 bank: 
                   type: string
