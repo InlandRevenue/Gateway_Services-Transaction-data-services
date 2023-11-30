@@ -25,7 +25,7 @@ It provides static responses for a subset of scenarios invoked on each API.
 
 ## YAML
 
-* [TDS API YAML](./TDS%20API-20230614.yaml)  
+* [TDS API YAML](./TDS%20API-20231201.yaml)  
 * [View YAML is a Swagger Editor](https://inlandrevenue.github.io/?urls.primaryName=TDS%20API)
 
 ### Reconciliation (Batch) Model 
