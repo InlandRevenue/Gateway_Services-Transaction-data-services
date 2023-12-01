@@ -3,12 +3,11 @@
 #
 # Date              Change
 # **********        **********
-#					- Added maxLength and minLength to all string data type
+# 2023-12-01		- Added maxLength and minLength to all string data type
+#                   - Updated accountType description for FBT & GST
 #					- Added transaction types (CSCCRD, CSECRM, SLSMCC, SLSMCD)
 #					- Added new bankAccountStandard MAC - Macau
 #                   - Removed 'Status' path
-#                   - Updated version number to 20231201 (was 20231123)
-#                   - Renamed this document to TDS API-20231201.yaml (was 20231123)
 #*****************************************************************************************
 swagger: '2.0'
 info: 
