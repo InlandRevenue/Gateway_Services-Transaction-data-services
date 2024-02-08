@@ -24,7 +24,7 @@ It provides static responses for a subset of scenarios invoked on each API.
 * [TDS Transition Overview V1](./TDS%20Transition%20Overview%20V4.pdf)
 
 ## TDS Business use cases
-	- [Download and view](./TDS%20Business%20Use%20Cases.pdf)
+* [Download and view](./TDS%20Business%20Use%20Cases.pdf)
 
 ## YAML
 
