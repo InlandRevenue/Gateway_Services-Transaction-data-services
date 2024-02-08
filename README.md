@@ -18,10 +18,13 @@ This is an emulated service which emulates the TDS Gateway Service APIs.
 It provides static responses for a subset of scenarios invoked on each API. 
 >**Please note** that not all requests and responses are emulated.
 
-## TDS API Build Pack & TDS Transition Overview V1
+## TDS API Build Pack 
 
 * [Build pack - TDS API](./Build%20pack%20-%20TDS%20API.pdf)
 * [TDS Transition Overview V1](./TDS%20Transition%20Overview%20V4.pdf)
+
+##TDS Business use cases
+	- [Download and view](./TDS%20Business%20Use%20Cases.pdf)
 
 ## YAML
 
