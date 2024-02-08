@@ -170,8 +170,8 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
 
 ## Mock Test Report Templates
 
- * [TDS Transactional Data Services Realtime](TDS%20Replacement%20Services%20Realtime%20-%20Emulators.docx)
- * [TDS Transactional Data Services Reconciliation (Batch)](TDS%20Replacement%20Services%20Reconciliation%20-%20Emulators.docx)
+ * [TDS API Realtime](TDS%20API%20Realtime%20-%20Emulators.docx)
+ * [TDS API Reconciliation (Batch)](TDS%20API%20Reconciliation%20-%20Emulators.docx)
 
 <a href="Digital-Testing-Environment-information"></a>
 # Digital Testing Environment information
@@ -180,15 +180,15 @@ The mind map for the emulated service [View larger image](./Images/TDSEmulatorMi
   
 ## Test Report Templates
 
- * [TDS Replacement Service Realtime - Test Report Template](TDS%20Replacement%20Service%20Realtime%20-%20Test%20Report%20Template.docx)
- * [TDS Replacement Service Reconciliation (Batch) - Test Report Template](TDS%20Replacement%20Service%20Reconciliation%20-%20Test%20Report%20Template.docx)
+ * [TDS API Realtime - Test Report Template](TDS%20API%20Realtime%20-%20Test%20Report%20Template.docx)
+ * [TDS API Reconciliation (Batch) - Test Report Template](TDS%20API%20Reconciliation%20-%20Test%20Report%20Template.docx)
  
 <a href="Production-Environment-information"></a>
 # Production Environment information:
 
    * URL Endpoint: https://services.ird.govt.nz:4046/gateway/tds/
 
->***PLEASE NOTE:*** IR requires DSP’s to provide a separate mutual TLS certificate which will be used exclusively for the TDS API /Summary and /transaction/batch.  
+>***PLEASE NOTE:*** IR requires DSP’s to provide a separate mutual TLS certificate which will be used exclusively for the TDS API /Summary and /transaction/batch.
 
 
 ## Supporting services
